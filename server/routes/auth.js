@@ -33,9 +33,7 @@ router.post('/register', async(req, res) => {
 
 });
 
-
-
-// number  LOGIN user
+// number 18 LOGIN user
 router.post('/login', async(req, res) => {
     try {
         const user = await User.findOne({email: req.body.email});

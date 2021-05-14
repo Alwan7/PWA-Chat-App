@@ -12,6 +12,7 @@ const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
 // Number 27 require users posts from routes file 
 const postRoute = require('./routes/posts');
+const allPost = require('./routes/posts');
 
 // number 2 .ENV 
 dotEnv.config(); // as a config 
@@ -35,7 +36,7 @@ app.use('/api/auth', authRoute);
 
 // Number 28 Use router Post File
 app.use('/api/posts', postRoute);
-
+app.use('/api/posts/story/all', allPost);
 
 
 // number 3 create PORT 

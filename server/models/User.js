@@ -20,18 +20,6 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: ''
     },
-    coverPicture:{
-        type: String,
-        default: ''
-    },
-    followers: {
-        type: Array,
-        default: []
-    }, 
-    followings: {
-        type: Array,
-        default: []
-    },
     isAdmin:{
         type: Boolean,
         default: false
@@ -39,18 +27,6 @@ const UserSchema = new mongoose.Schema({
     desc : {
         type: String,
         max: 50
-    },
-    city: {
-        type: String,
-        max: 50
-    },
-    from: {
-        type: String,
-        max: 50
-    }, 
-    relationship: {
-        type: Number,
-        enum: [1, 2, 3]
     }
 },
 {timestamps: true}
@@ -58,3 +34,4 @@ const UserSchema = new mongoose.Schema({
 
 // nuber 7 Export from User file this Schema 
 module.exports = mongoose.model('User', UserSchema);
+
