@@ -3,9 +3,10 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const dotEnv = require('dotenv'); // // DotENV for secret URL key 
-const helmet = require('helmet'); // Helmet helps you secure your Express apps by setting various HTTP headers
 const morgan = require('morgan'); // HTTP request logger middleware for node.js (login middleware)
 const PORT = 8080;
+var cors = require('cors')
+
 
 // number 14 get or require users and aouth from routes file
 const userRoute = require('./routes/users');
@@ -27,9 +28,8 @@ mongoose
 
 // Middleware // number 5 use middleware 
 app.use(express.json());
-app.use(helmet());
 app.use(morgan('common'));
-
+app.use(cors()) // Use this after the variable declaration
 // Number 15 Use router file
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
