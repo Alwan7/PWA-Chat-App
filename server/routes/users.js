@@ -53,17 +53,19 @@ router.delete('/:id', async(req, res) => {
 })
 
 // Number 23 Get a User using findById
-router.get('/:id', async (req, res) => {
+router.get("/", async (req, res) => {
+    const userId = req.query.userId;
+    const username = req.query.username;
     try {
-        const user = await User.findById(req.params.id);
-        const {password, updatedAt, ...other} = user._doc  // _doc is a object to create new User withot passwor and update find a user
-        res.status(200).json(other);
-        
+      const user = userId
+        ? await User.findById(userId)
+        : await User.findOne({ username: username });
+      const { password, updatedAt, ...other } = user._doc;
+      res.status(200).json(other);
     } catch (err) {
-        return res.status(500).json(err);
+      res.status(500).json(err);
     }
-})
-
+  });
 
 module.exports = router
 
