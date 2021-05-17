@@ -1,40 +1,48 @@
 {
-    "name": "ChatApp PWA",
-    "short_name": "CAPWA",
-    "description": "Full stack chat application made as PWA",
-    "theme_color": "#000000",
-    "background_color": "#ffffff",
-    "orientation": "portrait",
-    "lang": "en",
-    "icons": [{
+  "name": "ChatApp PWA",
+  "short_name": "CAPWA",
+  "description": "Full stack chat application made as PWA",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "lang": "en",
+  "icons": [
+    {
       "src": "images/29.png",
       "sizes": "29x29",
       "type": "image/png"
-    }, {
+    },
+    {
       "src": "images/40.png",
       "sizes": "40x40",
       "type": "image/png"
-    }, {
+    },
+    {
       "src": "images/60.png",
       "sizes": "60x60",
       "type": "image/png"
-    }, {
+    },
+    {
       "src": "images/80.png",
       "sizes": "80x80",
       "type": "image/png"
-    }, {
+    },
+    {
       "src": "images/120.png",
       "sizes": "120x120",
       "type": "image/png"
-    }, {
+    },
+    {
       "src": "images/180.png",
       "sizes": "180x180",
       "type": "image/png"
-    }, {
+    },
+    {
       "src": "images/1024.png",
       "sizes": "1024x1024",
       "type": "image/png"
-    }],
-    "start_url": "/",
-    "display": "standalone"
-  }
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}
