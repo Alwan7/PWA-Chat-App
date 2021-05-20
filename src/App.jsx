@@ -5,14 +5,12 @@ import Create from "./components/Create";
 import { Dashboard } from "./components/Dashboard";
 import { Home } from "./components/Home";
 import { Login } from "./components/Login";
-import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <div className="content">
         <Router>
-          <Navbar />
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/create" component={Create} />
