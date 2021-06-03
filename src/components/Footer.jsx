@@ -34,11 +34,10 @@ const styles = {
       'display:': 'flex',
       'justifyContent': 'center',
       'alignItems': 'center',
-      
     },
     link : {
       'color' : '#fff',
-      'margin' : '10% 10px 5px 10%',
+      'margin' : '10% 10px 5px 12%',
       'paddingBottom' : '5px'
     }
 }
