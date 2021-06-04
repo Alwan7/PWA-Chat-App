@@ -38,6 +38,6 @@ const styles = {
     link : {
       'color' : '#fff',
       'margin' : '10% 10px 5px 12%',
-      'paddingBottom' : '5px'
+      'paddingBottom' : '5px',
     }
 }

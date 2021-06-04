@@ -1,4 +1,4 @@
-import { mountAndImport } from 'react-easier';
+  import { mountAndImport } from 'react-easier';
 
 // mongoosy models and make global
 import mongoosy from 'mongoosy/frontend';
@@ -15,7 +15,14 @@ if('serviceWorker' in navigator){
 
 }
 
-
+Notification.requestPermission(function(status) {
+  if (Notification.permission == 'granted') {
+    console.log('Notification permission status:', status);
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      reg.showNotification('Welcome to Aptr! Enjoy your stay.');
+    });
+  }
+});
 
 
 mountAndImport({
