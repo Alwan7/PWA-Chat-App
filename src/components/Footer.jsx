@@ -26,18 +26,15 @@ const styles = {
       'textShadow': '0 0 3px black',
       'padding': '10px 10px 30px 10px',
       'borderTop':  '3px solid #00457e',
-      'height': '40px',
       'position': 'fixed',
       'bottom': '0',
       'width': '100%',
       'left': '0',
       'display:': 'flex',
-      'justifyContent': 'center',
-      'alignItems': 'center',
     },
     link : {
       'color' : '#fff',
-      'margin' : '10% 10px 5px 12%',
+      'marginLeft' : '2%',
       'paddingBottom' : '5px',
     }
 }

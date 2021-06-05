@@ -56,16 +56,17 @@ style=
 
       img {
         width: 100%;
-        padding : 10%;
       }
-      post {
+      .post {
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        -webkit-box-shadow: 0px 0px 16px -8px rgba(143, 132, 132, 0.68);
+        -webkit-box-shadow: 0px 0px 16px -7px rgba(944, 944, 444, 0.68);
         box-shadow: 0px 0px 16px -8px rgba(128, 118, 118, 0.68);
         margin: 30px 0;
         color: #fff;
+        padding: 10%;
+        margin-bottom: 10%;
       }
       postWrapper {
         padding: 10px;

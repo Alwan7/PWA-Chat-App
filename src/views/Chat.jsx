@@ -54,6 +54,7 @@ export default function Chat() {
     {<>
       <div className="rooms">
         <div className="roomList">
+        <Link to='/'><span className= 'back-icon'><ArrowBackIcon /></span></Link>
           <h4>Rooms</h4>
         {(g.rooms || []).map(room =>
             <div
@@ -89,7 +90,6 @@ export default function Chat() {
       <div className="writeMessage">
         <form className="messageForm" autoComplete="off" onSubmit={send}>
           <div className="input-group m-3">
-          <Link to='/'><span className= 'back-icon'><ArrowBackIcon /></span></Link>
             <input type="text" className="input-send form-control shadow-none" placeholder="Write message"{...s.bind('message')} />
             <div className="input-group-append">
               <button className="btn-send" type="button submit"><SendIcon/></button>
